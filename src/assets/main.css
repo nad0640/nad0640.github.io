@@ -1,0 +1,77 @@
+@import "./styles/base.css";
+@import "./styles/styles.css";
+@import "./styles/ui.css";
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+
+  .hover-effect:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .morph-hover-effect:hover {
+    border-radius: 10%;
+    transition: border-radius 0.26s;
+    transition-timing-function: ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  button:active {
+    background-position: left center; /* change the direction of the change here */
+    opacity: 0.3;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media (max-width: 1368px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  font-size: var(--font-regular);
+}
+
+button {
+  background-image: linear-gradient(
+    to right,
+    #1e3136 0%,
+    #78909c 28%,
+    #78909c 72%,
+    #1e3136 100%
+  );
+  margin: 10px;
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--color-white);
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  border: 2px solid var(--color-border);
+}
+
+footer,
+footer > p {
+  text-align: center;
+  background-color: #1e3136;
+  color: var(--primary-dark);
+  padding: 16px;
+  margin: 0px;
+  font-weight: 200;
+}

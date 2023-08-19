@@ -1,0 +1,30 @@
+@import "./base.css";
+
+:root {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--primary-dark);
+  --color-border-hover: var(--secondary-dark);
+
+  --color-primary: var(--primary-dark);
+  --color-secondary: var(--secondary-dark);
+
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
+
+  --color-tree-dark: #365e57;
+  --color-rock-dark: #2f484f;
+  --color-rock-light: #917472;
+  --color-flame-yellow: #fde26c;
+  --color-flame-orange: #fda263;
+
+  --section-gap: 80px;
+}
+
+@media (max-width: 578px) {
+  :root {
+    --section-gap: 40px;
+  }
+}
